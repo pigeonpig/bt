@@ -14,6 +14,7 @@ v2ray/sbin/v2ray -config v2ray/etc/config.json >/dev/null 2>&1 &
 
 #以下是启动rclone并挂起
 sudo rclone mount e5: /home/onedrive --allow-non-empty --daemon --vfs-cache-mode writes
+#以下是启动aria2c并挂起
+sudo aria2c --conf-path=/etc/aria2/aria2.conf -D
 #以下是启动nethogs保活
-sudo nethogs
-
+sudo nethogs 
